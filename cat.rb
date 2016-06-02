@@ -14,8 +14,10 @@ class Cat
       return "#{@meal_time - 12} AM"
     elsif @meal_time > 12
       return "#{@meal_time - 12} PM"
-    else @meal_time == 12
-      return "#{@meal_time}"
+    elsif @meal_time == 12
+      return "12 PM"
+    elsif @meal_time == 0 || @meal_time == 24
+      puts "12 AM"
     end
   end
 
