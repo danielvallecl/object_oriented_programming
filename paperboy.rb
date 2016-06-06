@@ -23,10 +23,11 @@ def deliver(start_address, end_address)
 
   if house_total <= @quota
     @earnings = @experience * (0.25)
-    @earnings -= 2 house_total < quota
+    @earnings -= 2 if house_total < quota
   elsif house_total > @quota
     @earnings = (@experience * 0.25) + ((@experience - @quota) * 0.25)
   end_address
+  end
 end
 
 def report
