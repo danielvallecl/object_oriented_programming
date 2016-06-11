@@ -11,7 +11,7 @@ class Paperboy
 end
 
 def quota
-
+  return @quota
 end
 
 def deliver(start_address, end_address)
